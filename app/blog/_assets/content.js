@@ -256,4 +256,108 @@ export const articles = [
       </>
     ),
   },
+  {
+    // The unique slug to use in the URL. It's also used to generate the canonical URL.
+    slug: "proba",
+    // The title to display in the article page (h1). Less than 60 characters. It's also used to generate the meta title.
+    title: "Teszt blog poszt",
+    // The description of the article to display in the article page. Up to 160 characters. It's also used to generate the meta description.
+    description:
+      "Ez egy teszt.",
+    // An array of categories of the article. It's used to generate the category badges, the category filter, and more.
+    categories: [
+      categories.find((category) => category.slug === categorySlugs.tippek),
+    ],
+    // The author of the article. It's used to generate a link to the author's bio page.
+    author: authors.find((author) => author.slug === authorSlugs.edina),
+    // The date of the article. It's used to generate the meta date.
+    publishedAt: "2024-09-17",
+    image: {
+      // The image to display in <CardArticle /> components.
+      src: introducingSupabaseImg,
+      // The relative URL of the same image to use in the Open Graph meta tags & the Schema Markup JSON-LD.
+      urlRelative: "/blog/introducing-supabase/header.jpg",
+      alt: "Supabase and ShipFast logo combined",
+    },
+    // The actual content of the article that will be shown under the <h1> title in the article page.
+    content: (
+      <>
+        <Image
+          src={introducingSupabaseImg}
+          alt="Supabase and ShipFast logo combined"
+          width={700}
+          height={500}
+          priority={true}
+          className="rounded-box"
+          placeholder="blur"
+        />
+        <section>
+          <h2 className={styles.h2}>Bevezetés</h2>
+          <p className={styles.p}>
+            A Tervezett SzenzoMotoros Tréning (TSMT) egy olyan mozgásterápia, amely az idegrendszerre gyakorolt hatása révén újraszervezi és újrahuzalozza a neurológiai alapokat. Segít az agynak megszabadulni bizonyos akadályoktól, mint például a fennmaradt primitív reflexek. Ezek a reflexek befolyásolják a mozgást, beszédet, pszichikumot és a viselkedést is.
+          </p>
+        </section>
+
+        <section>
+          <h3 className={styles.h3}>1. A TSMT hatása</h3>
+          <p className={styles.p}>
+            A tervezett szenzomotoros terápia az első lépés a fejlődésben, amely végső soron hatással van a tanulásra, viselkedésre és mindennapi életvitelünkre. A terápia segít rendezni az alapvető idegrendszeri funkciókat, amelyekre épülnek az értelmi képességek, a figyelem és a pszichés stabilitás. Ez a módszer noninvazív, szelíd gyógymód, amely gyógyszeres kezelés nélkül képes hatni az idegrendszer működésére.
+          </p>
+        </section>
+
+        <section>
+          <h3 className={styles.h3}>2. Mi is az a TSMT?</h3>
+          <p className={styles.p}>
+            A TSMT, vagyis Tervezett SzenzoMotoros Tréning, egy olyan terápiás módszer, amely egyénre szabottan segít a gyermekek szenzoros és mozgásos fejlesztésében. A terápia megtervezett, mivel minden gyermek egyedi tünetegyüttesére van szabva. A szenzoros rendszerekre hat, azaz az érzékszerveinkre, és motoros, mivel mozgásos gyakorlatokkal segítjük a fejlődést. Tréning formájában zajlik, azaz rendszeres, ismétlődő gyakorlatokon keresztül fejleszti a gyermekeket. Ez a terápia nemcsak a fizikai mozgás javításában, hanem a figyelem, viselkedés és pszichés stabilitás fejlesztésében is hatékony.
+          </p>
+        </section>
+
+        <section>
+          <h3 className={styles.h3}>3. Milyen tünetek esetén segíthet a TSMT?</h3>
+          <p className={styles.p}>
+            A TSMT terápia számos tünetet kezelhet, például:
+            <ul className="list-inside list-disc space-y-1.5 ml-5">
+              <li>Lassú vagy megkésett beszédfejlődés</li>
+              <li>Megkésett mozgásfejlődés (pl. késői járás, kúszás-mászás kimaradása)</li>
+              <li>Izomtónus problémák, mint laza vagy feszes izomzat</li>
+              <li>Darabos, koordinálatlan mozgás</li>
+              <li>Félénkség új helyzetekkel vagy mozgásformákkal szemben</li>
+              <li>Túlérzékenység vagy alulérzékenység az érzékszervi ingerekre</li>
+              <li>Figyelmi és koncentrációs nehézségek</li>
+              <li>Viselkedésbeli problémák, mint agresszió, hiperaktivitás, vagy szorongás</li>
+            </ul>
+          </p>
+        </section>
+
+        <section>
+          <h3 className={styles.h3}>4. Hogyan zajlik a TSMT terápia?</h3>
+          <p className={styles.p}>
+            A TSMT terápia során speciális, szenzo-motoros feladatokat alkalmazunk, amelyek a gyermekek idegrendszeri érettségét és mozgáskoordinációját fejlesztik. A feladatok célzottan segítenek az egyensúly, ritmusérzék és koordináció javításában, így a gyermekek képesek lesznek jobban alkalmazkodni a környezetükhöz, és javulnak kognitív képességeik is. A terápia kétféle formában történhet: egyéni és csoportos foglalkozásokon. Az egyéni torna lehetőséget ad arra, hogy a szülők otthon is gyakoroljanak gyermekükkel, míg a csoportos torna a közösségi készségek fejlesztésére is kiváló.
+          </p>
+        </section>
+
+        <section>
+          <h3 className={styles.h3}>5. Miért fontos az archaikus reflexek integrálása?</h3>
+          <p className={styles.p}>
+            Az emberi agy fejlődésének nagy része a születés után zajlik. A csecsemőkori reflexek, mint a Galant vagy ATNR, egy éves korig integrálódnak, vagyis a magasabb rendű agyi központok szabályozása alá kerülnek. Ha ezek a reflexek nem integrálódnak megfelelően, az akadályozhatja a mozgás, testtartás és egyensúly fejlődését. A TSMT terápiás torna segít ezeknek az archaikus reflexeknek az integrálásában, ami az alapja a magasabb rendű motoros és kognitív képességek fejlődésének.
+          </p>
+        </section>
+
+        <section>
+          <h3 className={styles.h3}>6. Hogyan segít a TSMT a mindennapi életben?</h3>
+          <p className={styles.p}>
+            A TSMT terápia hatására a gyermekek mozgása koordináltabbá és harmonikusabbá válik, javul a figyelmük és koncentrációjuk, valamint a társas kapcsolataik is fejlődnek. A terápia hozzájárul a beszédfejlődéshez, az érzékelési ingerek jobb feldolgozásához, és az önuralom növekedéséhez. A gyermekek iskolai teljesítménye javul, jobban alkalmazkodnak a változó helyzetekhez, és könnyebben kezelik az érzelmi kihívásokat. A terápia nemcsak a gyerekekre van pozitív hatással, hanem a szülő-gyermek kapcsolatra is, hiszen a közös munkával minőségi időt töltenek együtt.
+          </p>
+        </section>
+
+        <section>
+          <h3 className={styles.h3}>7. Miért szelíd gyógymód?</h3>
+          <p className={styles.p}>
+            A TSMT terápia noninvazív, nem igényel gyógyszeres kezelést vagy sebészeti beavatkozást. Mozgásterápiával, életmódbeli változtatásokkal és étrendi tanácsokkal természetes módon segítjük az idegrendszer fejlődését. A TSMT ráadásul remek lehetőség családépítésre is: a közös munka, a közösen elért eredmények megerősítik a szülő-gyermek kapcsolatot, és javítják a család dinamikáját.
+          </p>
+        </section>
+
+      </>
+    ),
+  },
 ];
