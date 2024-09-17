@@ -190,14 +190,14 @@ export const articles = [
         <section>
           <h2 className={styles.h2}>Bevezetés</h2>
           <p className={styles.p}>
-            A Tervezett SzenzoMotoros Tréning (TSMT) egy olyan mozgásterápia, amely az idegrendszerre gyakorolt hatása révén újraszervezi és "újrahuzalozza" a neurológiai alapokat. Segít az agynak megszabadulni bizonyos akadályoktól, mint például a fennmaradt primitív reflexek. Ezek a reflexek befolyásolják a mozgást, beszédet, pszichikumot és a viselkedést is.
+            A Tervezett SzenzoMotoros Tréning (TSMT) egy olyan mozgásterápia, amely az idegrendszerre gyakorolt hatása révén újraszervezi és újrahuzalozza a neurológiai alapokat. Segít az agynak megszabadulni bizonyos akadályoktól, mint például a fennmaradt primitív reflexek. Ezek a reflexek befolyásolják a mozgást, beszédet, pszichikumot és a viselkedést is.
           </p>
         </section>
 
         <section>
           <h3 className={styles.h3}>1. A TSMT hatása</h3>
           <p className={styles.p}>
-            A tervezett szenzomotoros terápia az első lépés a fejlődésben, amely végső soron hatással van a „tanulásra”, „viselkedésre” és mindennapi életvitelünkre. A terápia segít rendezni az alapvető idegrendszeri funkciókat, amelyekre épülnek az értelmi képességek, a figyelem és a pszichés stabilitás. Ez a módszer noninvazív, szelíd gyógymód, amely gyógyszeres kezelés nélkül képes hatni az idegrendszer működésére.
+            A tervezett szenzomotoros terápia az első lépés a fejlődésben, amely végső soron hatással van a tanulásra, viselkedésre és mindennapi életvitelünkre. A terápia segít rendezni az alapvető idegrendszeri funkciókat, amelyekre épülnek az értelmi képességek, a figyelem és a pszichés stabilitás. Ez a módszer noninvazív, szelíd gyógymód, amely gyógyszeres kezelés nélkül képes hatni az idegrendszer működésére.
           </p>
         </section>
 
@@ -249,7 +249,7 @@ export const articles = [
         <section>
           <h3 className={styles.h3}>7. Miért szelíd gyógymód?</h3>
           <p className={styles.p}>
-            A TSMT terápia noninvazív, nem igényel gyógyszeres kezelést vagy sebészeti beavatkozást. Mozgásterápiával, életmódbeli változtatásokkal és étrendi tanácsokkal természetes módon segítjük az idegrendszer fejlődését. A TSMT ráadásul remek lehetőség családépítésre is: a közös „munka”, a közösen elért eredmények megerősítik a szülő-gyermek kapcsolatot, és javítják a család dinamikáját.
+            A TSMT terápia noninvazív, nem igényel gyógyszeres kezelést vagy sebészeti beavatkozást. Mozgásterápiával, életmódbeli változtatásokkal és étrendi tanácsokkal természetes módon segítjük az idegrendszer fejlődését. A TSMT ráadásul remek lehetőség családépítésre is: a közös munka, a közösen elért eredmények megerősítik a szülő-gyermek kapcsolatot, és javítják a család dinamikáját.
           </p>
         </section>
 
