@@ -1,6 +1,7 @@
 import Image from "next/image";
 import marcImg from "@/app/blog/_assets/images/authors/DSC_8214.jpg";
 import introducingSupabaseImg from "@/public/blog/introducing-supabase/sandy-millar-nuS2GDpCDoI-unsplash.jpg";
+import introducingSupabaseImg2 from "@/public/blog/introducing-supabase/erika-fletcher-YfNWGrQI3a4-unsplash.jpg";
 
 // ==================================================================================================================================================================
 // BLOG CATEGORIES 🏷️
@@ -274,7 +275,7 @@ export const articles = [
     publishedAt: "2024-09-17",
     image: {
       // The image to display in <CardArticle /> components.
-      src: introducingSupabaseImg,
+      src: introducingSupabaseImg2,
       // The relative URL of the same image to use in the Open Graph meta tags & the Schema Markup JSON-LD.
       urlRelative: "/blog/introducing-supabase/header.jpg",
       alt: "Supabase and ShipFast logo combined",

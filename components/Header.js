@@ -10,7 +10,7 @@ import config from "@/config";
 
 const links = [
   {
-    href: "/#pricing",
+    href: "/#features",
     label: "Program",
   },
   {

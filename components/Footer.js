@@ -40,7 +40,7 @@ const Footer = () => {
           <div className="flex-grow flex flex-wrap justify-center -mb-10 md:mt-0 mt-10 text-center">
             <div className="lg:w-1/3 md:w-1/2 w-full px-4">
               <div className="footer-title font-semibold text-base-content tracking-widest text-sm md:text-left mb-3">
-                LINKS
+                LINKEK
               </div>
 
               <div className="flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm">
@@ -51,32 +51,37 @@ const Footer = () => {
                     className="link link-hover"
                     aria-label="Contact Support"
                   >
-                    Support
+                    Kapcsolat
                   </a>
                 )}
-                <Link href="/#pricing" className="link link-hover">
-                  Pricing
+
+                <Link href="/#features" className="link link-hover">
+                  Programok
                 </Link>
-                <Link href="/blog" className="link link-hover">
+                
+                <Link href="/#testimonials" className="link link-hover">
+                  Érékelések
+                </Link>
+                <Link href="/#faq" className="link link-hover">
+                  GYIK
+                </Link>
+                <a href="/blog" target="_blank" className="link link-hover">
                   Blog
-                </Link>
-                <a href="/#" target="_blank" className="link link-hover">
-                  Affiliates
                 </a>
               </div>
             </div>
 
             <div className="lg:w-1/3 md:w-1/2 w-full px-4">
               <div className="footer-title font-semibold text-base-content tracking-widest text-sm md:text-left mb-3">
-                LEGAL
+                ADATVÉDELEM
               </div>
 
               <div className="flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm">
                 <Link href="/tos" className="link link-hover">
-                  Terms of services
+                  ÁSZF
                 </Link>
                 <Link href="/privacy-policy" className="link link-hover">
-                  Privacy policy
+                  Adatvédelmi tájékoztató
                 </Link>
               </div>
             </div>
