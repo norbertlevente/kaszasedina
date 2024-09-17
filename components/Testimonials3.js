@@ -4,24 +4,24 @@ import config from "@/config";
 // The list of your testimonials. It needs 3 items to fill the row.
 const list = [
   {
-    // Optional, use for social media like Twitter. Does not link anywhere but cool to display
-    username: "marclou",
+  
     // REQUIRED
-    name: "Marc Lou",
+    name: "D. Márta",
     // REQUIRED
-    text: "Really easy to use. The tutorials are really useful and explains how everything works. Hope to ship my next project really fast!",
+    text: "Edina néni iskolaelőkészítő óráinak köszönhetően gyermekem magabiztosabb lett, szebben színez és ügyesebben számol. Azért ajánlom, mert kisfiam minden foglalkozáson nagyon jól érezte magát, így egyfajta élmény volt neki a sulira való készülődés.",
     // Optional, a statically imported image (usually from your public folder—recommended) or a link to the person's avatar. Shows a fallback letter if not provided
-    img: "https://pbs.twimg.com/profile_images/1514863683574599681/9k7PqDTA_400x400.jpg",
+    img:
+      "/assets/philippe-murray-pietsch-wQfSjUM8xsg-unsplash.jpg"
   },
   {
-    username: "the_mcnaveen",
-    name: "Naveen",
-    text: "Setting up everything from the ground up is a really hard, and time consuming process. What you pay for will save your time for sure.",
+    name: "K. Réka",
+    text: "Alízzal a negyedik TSMT gyakorlatsorozatot kezdtük meg nemrég. A kislányom egy roppant nyitott és kedves gyermek, akinek mindazonáltal nagy nehézséget okozott és okoz máig az érzelemszabályozás, és noha erős és tökéletesen egészséges fizikailag, mozgása sokszor koordinálatlan, imbolygó, pl. miután megtanult járni, még nagyon hosszú ideig nekiment fejjel ajtófélfának, széknek, falnak stb. Míg a nagyobbik lányomnál nagyon nehezen találtam meg, hogyan motiváljam tornára, Alíz szereti csinálni, ilyenkor a figyelmem csak rá irányul, ettől különlegesek ezek a napi 20 percek, a sok érintés és mondóka nagy meghittséget ad, és a humornak is mindig van hely.",
+    img: "/assets/sarah-cervantes-79GLX12EY98-unsplash.jpg",
   },
   {
-    username: "wahab",
-    name: "Wahab Shaikh",
-    text: "Easily saves 15+ hrs for me setting up trivial stuff. Now, I can directly focus on shipping features rather than hours of setting up the same technologies from scratch. Feels like a super power! :D",
+    name: "F. Andrea",
+    text: "Edina néni foglalkozásainak hála, kislányom jelentős fejlődést mutatott mind a finommotorika, mind a szociális készségek terén. Korábban nehezen barátkozott és tartott az új helyzetektől, de a támogató és szeretetteljes légkörben magabiztosabbá vált. Különösen tetszik, hogy Edina egyénre szabottan foglalkozik a gyerekekkel, figyelembe véve az egyedi igényeiket és képességeiket. Minden szülőnek szívből ajánlom, aki szeretné megkönnyíteni gyermeke számára az iskolakezdést.",
+    img: "/assets/brooke-cagle-NoRsyXmHGpI-unsplash.jpg", 
   },
 ];
 
@@ -81,12 +81,11 @@ const Testimonials3 = () => {
         <div className="flex flex-col text-center w-full mb-20">
           <div className="mb-8">
             <h2 className="sm:text-5xl text-4xl font-extrabold text-base-content">
-              212 makers are already shipping faster!
+              Több mint 100 elégedett szülő és gyerek!
             </h2>
           </div>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-base-content/80">
-            Don&apos;t take our word for it. Here&apos;s what they have to say
-            about ShipFast.
+            Ne csak a mi szavunknak higgy – íme, mit mondanak azok, akik már próbálták.
           </p>
         </div>
 
@@ -100,6 +99,7 @@ const Testimonials3 = () => {
         </ul>
       </div>
     </section>
+    
   );
 };
 

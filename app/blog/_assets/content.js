@@ -1,6 +1,6 @@
 import Image from "next/image";
-import marcImg from "@/app/blog/_assets/images/authors/marc.png";
-import introducingSupabaseImg from "@/public/blog/introducing-supabase/header.png";
+import marcImg from "@/app/blog/_assets/images/authors/DSC_8214.jpg";
+import introducingSupabaseImg from "@/public/blog/introducing-supabase/sandy-millar-nuS2GDpCDoI-unsplash.jpg";
 
 // ==================================================================================================================================================================
 // BLOG CATEGORIES 🏷️
@@ -8,33 +8,33 @@ import introducingSupabaseImg from "@/public/blog/introducing-supabase/header.pn
 
 // These slugs are used to generate pages in the /blog/category/[categoryI].js. It's a way to group articles by category.
 const categorySlugs = {
-  feature: "feature",
-  tutorial: "tutorial",
+  hirek: "hírek",
+  tippek: "tippek",
 };
 
 // All the blog categories data display in the /blog/category/[categoryI].js pages.
 export const categories = [
   {
     // The slug to use in the URL, from the categorySlugs object above.
-    slug: categorySlugs.feature,
+    slug: categorySlugs.hirek,
     // The title to display the category title (h1), the category badge, the category filter, and more. Less than 60 characters.
-    title: "New Features",
+    title: "Hírek és blog",
     // A short version of the title above, display in small components like badges. 1 or 2 words
-    titleShort: "Features",
+    titleShort: "Hírek",
     // The description of the category to display in the category page. Up to 160 characters.
     description:
-      "Here are the latest features we've added to ShipFast. I'm constantly improving our product to help you ship faster.",
+      "Legújabb híreink, eseményeink és blog posztjaink.",
     // A short version of the description above, only displayed in the <Header /> on mobile. Up to 60 characters.
-    descriptionShort: "Latest features added to ShipFast.",
+    descriptionShort: "Legújabb híreink",
   },
   {
-    slug: categorySlugs.tutorial,
-    title: "How Tos & Tutorials",
-    titleShort: "Tutorials",
+    slug: categorySlugs.tippek,
+    title: "Tippek és tanácsok",
+    titleShort: "Tippek",
     description:
-      "Learn how to use ShipFast with these step-by-step tutorials. I'll show you how to ship faster and save time.",
+      "Olvasd el legújabb tippjeinket és tanácsainkat.",
     descriptionShort:
-      "Learn how to use ShipFast with these step-by-step tutorials.",
+      "Olvasd el legújabb tippjeinket és tanácsainkat.",
   },
 ];
 
@@ -95,21 +95,21 @@ const socialIcons = {
 
 // These slugs are used to generate pages in the /blog/author/[authorId].js. It's a way to show all articles from an author.
 const authorSlugs = {
-  marc: "marc",
+  edina: "edina",
 };
 
 // All the blog authors data display in the /blog/author/[authorId].js pages.
 export const authors = [
   {
     // The slug to use in the URL, from the authorSlugs object above.
-    slug: authorSlugs.marc,
+    slug: authorSlugs.edina,
     // The name to display in the author's bio. Up to 60 characters.
-    name: "Marc Lou",
+    name: "Palotásné Kaszás Edina",
     // The job to display in the author's bio. Up to 60 characters.
-    job: "Maker of ByeDispute",
+    job: "Tanító, fejlesztő pedagógus",
     // The description of the author to display in the author's bio. Up to 160 characters.
     description:
-      "Marc is a developer and an entrepreneur. He's built 20 startups in the last 3 years. 6 were profitable and 3 were acquired. He's currently building ByeDispute, the #1 Stripe Chargebacks Protection tool.",
+      "Gyermekfejlesztési szakember, aki több mint 20 éves tapasztalattal segít a gyermekek beszéd-, mozgás- és figyelmi problémáinak leküzdésében. Három gyermek édesanyjaként és a TSMT terápia szakértőjeként elkötelezett abban, hogy a szülőket és gyermekeiket támogassa a sikeres fejlődés útján.",
     // The avatar of the author to display in the author's bio and avatar badge. It's better to use a local image, but you can also use an external image (https://...)
     avatar: marcImg,
     // A list of social links to display in the author's bio.
@@ -154,20 +154,20 @@ const styles = {
 export const articles = [
   {
     // The unique slug to use in the URL. It's also used to generate the canonical URL.
-    slug: "introducing-supabase",
+    slug: "tsmt",
     // The title to display in the article page (h1). Less than 60 characters. It's also used to generate the meta title.
-    title: "Introducing Supabase to ShipFast",
+    title: "A TSMT módszerről",
     // The description of the article to display in the article page. Up to 160 characters. It's also used to generate the meta description.
     description:
-      "Supabase is an open-source Firebase alternative. It's a great tool for building a backend for your app. It's now integrated with ShipFast!",
+      "A Tervezett SzenzoMotoros Tréning (TSMT) egy olyan mozgásterápia, amely az idegrendszerre gyakorolt hatása révén segít az agynak megszabadulni bizonyos akadályoktól, mint például a fennmaradt primitív reflexek.",
     // An array of categories of the article. It's used to generate the category badges, the category filter, and more.
     categories: [
-      categories.find((category) => category.slug === categorySlugs.feature),
+      categories.find((category) => category.slug === categorySlugs.tippek),
     ],
     // The author of the article. It's used to generate a link to the author's bio page.
-    author: authors.find((author) => author.slug === authorSlugs.marc),
+    author: authors.find((author) => author.slug === authorSlugs.edina),
     // The date of the article. It's used to generate the meta date.
-    publishedAt: "2023-11-20",
+    publishedAt: "2024-09-18",
     image: {
       // The image to display in <CardArticle /> components.
       src: introducingSupabaseImg,
@@ -188,56 +188,71 @@ export const articles = [
           placeholder="blur"
         />
         <section>
-          <h2 className={styles.h2}>Introduction</h2>
+          <h2 className={styles.h2}>Bevezetés</h2>
           <p className={styles.p}>
-            Supabase is an open-source Firebase alternative. It&apos;s a great
-            tool for building a backend for your app. It&apos;s now integrated
-            with ShipFast!
+            A Tervezett SzenzoMotoros Tréning (TSMT) egy olyan mozgásterápia, amely az idegrendszerre gyakorolt hatása révén újraszervezi és "újrahuzalozza" a neurológiai alapokat. Segít az agynak megszabadulni bizonyos akadályoktól, mint például a fennmaradt primitív reflexek. Ezek a reflexek befolyásolják a mozgást, beszédet, pszichikumot és a viselkedést is.
           </p>
         </section>
 
         <section>
-          <h3 className={styles.h3}>1. Create a supabase account</h3>
+          <h3 className={styles.h3}>1. A TSMT hatása</h3>
           <p className={styles.p}>
-            First, go to{" "}
-            <a href="https://supabase.com/" className="link link-primary">
-              Supabase
-            </a>{" "}
-            and create an account. It&apos;s free for up to 10,000 rows per
-            table.
-            <br />
-            Then create a new project and a new table. You can use the following
-            SQL schema:
+            A tervezett szenzomotoros terápia az első lépés a fejlődésben, amely végső soron hatással van a „tanulásra”, „viselkedésre” és mindennapi életvitelünkre. A terápia segít rendezni az alapvető idegrendszeri funkciókat, amelyekre épülnek az értelmi képességek, a figyelem és a pszichés stabilitás. Ez a módszer noninvazív, szelíd gyógymód, amely gyógyszeres kezelés nélkül képes hatni az idegrendszer működésére.
           </p>
-
-          <pre className={styles.code}>
-            <code>
-              {`CREATE TABLE public.users (
-  id bigint NOT NULL DEFAULT nextval('users_id_seq'::regclass),
-  email text NOT NULL,
-  password text NOT NULL,
-  created_at timestamp with time zone NOT NULL DEFAULT now(),
-  updated_at timestamp with time zone NOT NULL DEFAULT now(),
-  CONSTRAINT users_pkey PRIMARY KEY (id)
-);`}
-            </code>
-          </pre>
         </section>
 
         <section>
-          <h3 className={styles.h3}>2. Add your credentials to ShipFast</h3>
+          <h3 className={styles.h3}>2. Mi is az a TSMT?</h3>
           <p className={styles.p}>
-            Copy the <span className={styles.codeInline}>API URL</span> and{" "}
-            <span className={styles.codeInline}>API Key</span> from your
-            Supabase project settings and add them to your ShipFast project
-            settings. Add these files to your project:
+            A TSMT, vagyis Tervezett SzenzoMotoros Tréning, egy olyan terápiás módszer, amely egyénre szabottan segít a gyermekek szenzoros és mozgásos fejlesztésében. A terápia megtervezett, mivel minden gyermek egyedi tünetegyüttesére van szabva. A szenzoros rendszerekre hat, azaz az érzékszerveinkre, és motoros, mivel mozgásos gyakorlatokkal segítjük a fejlődést. Tréning formájában zajlik, azaz rendszeres, ismétlődő gyakorlatokon keresztül fejleszti a gyermekeket. Ez a terápia nemcsak a fizikai mozgás javításában, hanem a figyelem, viselkedés és pszichés stabilitás fejlesztésében is hatékony.
           </p>
-
-          <ul className={styles.ul}>
-            <li className={styles.li}>.env.local</li>
-            <li className={styles.li}>.env.production</li>
-          </ul>
         </section>
+
+        <section>
+          <h3 className={styles.h3}>3. Milyen tünetek esetén segíthet a TSMT?</h3>
+          <p className={styles.p}>
+            A TSMT terápia számos tünetet kezelhet, például:
+            <ul className="list-inside list-disc space-y-1.5 ml-5">
+              <li>Lassú vagy megkésett beszédfejlődés</li>
+              <li>Megkésett mozgásfejlődés (pl. késői járás, kúszás-mászás kimaradása)</li>
+              <li>Izomtónus problémák, mint laza vagy feszes izomzat</li>
+              <li>Darabos, koordinálatlan mozgás</li>
+              <li>Félénkség új helyzetekkel vagy mozgásformákkal szemben</li>
+              <li>Túlérzékenység vagy alulérzékenység az érzékszervi ingerekre</li>
+              <li>Figyelmi és koncentrációs nehézségek</li>
+              <li>Viselkedésbeli problémák, mint agresszió, hiperaktivitás, vagy szorongás</li>
+            </ul>
+          </p>
+        </section>
+
+        <section>
+          <h3 className={styles.h3}>4. Hogyan zajlik a TSMT terápia?</h3>
+          <p className={styles.p}>
+            A TSMT terápia során speciális, szenzo-motoros feladatokat alkalmazunk, amelyek a gyermekek idegrendszeri érettségét és mozgáskoordinációját fejlesztik. A feladatok célzottan segítenek az egyensúly, ritmusérzék és koordináció javításában, így a gyermekek képesek lesznek jobban alkalmazkodni a környezetükhöz, és javulnak kognitív képességeik is. A terápia kétféle formában történhet: egyéni és csoportos foglalkozásokon. Az egyéni torna lehetőséget ad arra, hogy a szülők otthon is gyakoroljanak gyermekükkel, míg a csoportos torna a közösségi készségek fejlesztésére is kiváló.
+          </p>
+        </section>
+
+        <section>
+          <h3 className={styles.h3}>5. Miért fontos az archaikus reflexek integrálása?</h3>
+          <p className={styles.p}>
+            Az emberi agy fejlődésének nagy része a születés után zajlik. A csecsemőkori reflexek, mint a Galant vagy ATNR, egy éves korig integrálódnak, vagyis a magasabb rendű agyi központok szabályozása alá kerülnek. Ha ezek a reflexek nem integrálódnak megfelelően, az akadályozhatja a mozgás, testtartás és egyensúly fejlődését. A TSMT terápiás torna segít ezeknek az archaikus reflexeknek az integrálásában, ami az alapja a magasabb rendű motoros és kognitív képességek fejlődésének.
+          </p>
+        </section>
+
+        <section>
+          <h3 className={styles.h3}>6. Hogyan segít a TSMT a mindennapi életben?</h3>
+          <p className={styles.p}>
+            A TSMT terápia hatására a gyermekek mozgása koordináltabbá és harmonikusabbá válik, javul a figyelmük és koncentrációjuk, valamint a társas kapcsolataik is fejlődnek. A terápia hozzájárul a beszédfejlődéshez, az érzékelési ingerek jobb feldolgozásához, és az önuralom növekedéséhez. A gyermekek iskolai teljesítménye javul, jobban alkalmazkodnak a változó helyzetekhez, és könnyebben kezelik az érzelmi kihívásokat. A terápia nemcsak a gyerekekre van pozitív hatással, hanem a szülő-gyermek kapcsolatra is, hiszen a közös munkával minőségi időt töltenek együtt.
+          </p>
+        </section>
+
+        <section>
+          <h3 className={styles.h3}>7. Miért szelíd gyógymód?</h3>
+          <p className={styles.p}>
+            A TSMT terápia noninvazív, nem igényel gyógyszeres kezelést vagy sebészeti beavatkozást. Mozgásterápiával, életmódbeli változtatásokkal és étrendi tanácsokkal természetes módon segítjük az idegrendszer fejlődését. A TSMT ráadásul remek lehetőség családépítésre is: a közös „munka”, a közösen elért eredmények megerősítik a szülő-gyermek kapcsolatot, és javítják a család dinamikáját.
+          </p>
+        </section>
+
       </>
     ),
   },

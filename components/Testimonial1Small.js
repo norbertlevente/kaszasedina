@@ -1,3 +1,4 @@
+// components/Testimonial1Small.js
 import Image from "next/image";
 
 // A one or two sentences testimonial from a customer.
@@ -5,7 +6,7 @@ import Image from "next/image";
 const Testimonial1Small = () => {
   return (
     <section className="bg-base-100">
-      <div className="space-y-6 md:space-y-8 max-w-lg mx-auto px-8 py-16 md:py-32 ">
+      <div className="space-y-6 md:space-y-8 max-w-lg mx-auto px-8 py-16 md:py-32">
         <div className="rating !flex justify-center">
           {[...Array(5)].map((_, i) => (
             <svg
@@ -25,28 +26,27 @@ const Testimonial1Small = () => {
         </div>
         <div className="text-base leading-relaxed space-y-2 max-w-md mx-auto text-center">
           <p>
-            <span className="bg-warning/25 px-1.5">
-              I don&apos;t want to pay Stripe $2 for every invoice.
-            </span>{" "}
-            I don&apos;t want to spend 10 minutes manually crafting every
-            invoice either.
+            Sokat fejlődött a feladattudata, a figyelme. 
           </p>
           <p>
-            Zenvoice solved this problem once and for all. The app is simple,
-            but it nails the job perfectly.
+            Nagyon hasznos, hogy olyan kulcsterületeket fejlesztenek, amelyek az iskolakezdésnél óriási segítséget jelentenek. Nem lesz újdonság maga a feladathelyzet, rutinná válnak olyan dolgok, mint pl. az irányok, a ceruzahasználat, stb. Nagy segítség ha az iskolában ezeken már nem kell külön gondolkodni, hanem rutinszerűen mennek.
+
+          </p>
+          <p>
+             A stresszmentes, batorító közegben könnyebben megy a tanulás, jó élmények kapcsolódnak hozzá. Az én <span className="bg-warning/25 px-1.5">kisfiam kifejezetten nagy örömmel és lelkesedéssel ment a foglalkozásokra</span>{" "}, Edina nagyon kedvesen, ugyanakkor hatékonyan vezeti a foglalkozásokat.
           </p>
         </div>
         <div className="flex justify-center items-center gap-3 md:gap-4">
           <Image
             className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover"
-            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/assets/johannes-krupinski-dyW-gQ6GcIY-unsplash.jpg"
             alt={`XYZ feedback for ZenVoice`}
             width={48}
             height={48}
           />
           <div>
-            <p className="font-semibold">Someone Nice</p>
-            <p className="text-base-content/80 text-sm">23.1K followers on 𝕏</p>
+            <p className="font-semibold">Anita</p>
+            <p className="text-base-content/80 text-sm">Elégedett anyuka</p>
           </div>
         </div>
       </div>

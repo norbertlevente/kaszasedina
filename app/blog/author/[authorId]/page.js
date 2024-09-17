@@ -67,7 +67,7 @@ export default async function Author({ params }) {
 
       <section>
         <h2 className="font-bold text-2xl lg:text-4xl tracking-tight text-center mb-8 md:mb-12">
-          Most recent articles by {author.name}
+          Legújabb cikkek: {author.name}
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-8">

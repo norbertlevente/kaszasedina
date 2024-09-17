@@ -8,17 +8,17 @@ import Image from "next/image";
 import logo from "@/app/icon.png";
 import config from "@/config";
 import { categories } from "../content";
-import ButtonSignin from "@/components/ButtonSignin";
+import ButtonExternal from "@/components/ButtonExternal";
 
 const links = [
   {
     href: "/blog/",
-    label: "All Posts",
+    label: "Minden poszt",
   },
 ];
 
 const cta = (
-  <ButtonSignin text="Prevent disputes" extraStyle="btn-primary md:btn-sm" />
+  <ButtonExternal />
 );
 
 const ButtonPopoverCategories = () => {
@@ -28,9 +28,9 @@ const ButtonPopoverCategories = () => {
         <>
           <Popover.Button
             className="link no-underline flex flex-nowrap items-center gap-1 text-base-content/80 hover:text-base-content active:text-base-content focus:text-base-content duration-100"
-            title="Open Blog categories"
+            title="Blog kategóriák megnyitása"
           >
-            Categories
+            Kategóriák
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -101,7 +101,7 @@ const ButtonAccordionCategories = () => {
         type="button"
         className="link no-underline flex justify-between items-center w-full "
       >
-        Categories
+        Kategóriák
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"

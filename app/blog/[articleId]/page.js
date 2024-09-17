@@ -92,7 +92,7 @@ export default async function Article({ params }) {
               clipRule="evenodd"
             />
           </svg>
-          Back to Blog
+          Vissza a Blogra
         </Link>
       </div>
 
@@ -129,14 +129,14 @@ export default async function Article({ params }) {
           {/* SIDEBAR WITH AUTHORS AND 3 RELATED ARTICLES */}
           <section className="max-md:pb-4 md:pl-12 max-md:border-b md:border-l md:order-last md:w-72 shrink-0 border-base-content/10">
             <p className="text-base-content/80 text-sm mb-2 md:mb-3">
-              Posted by
+              Írta:
             </p>
             <Avatar article={article} />
 
             {articlesRelated.length > 0 && (
               <div className="hidden md:block mt-12">
                 <p className=" text-base-content/80 text-sm  mb-2 md:mb-3">
-                  Related reading
+                  Kapcsolódó
                 </p>
                 <div className="space-y-2 md:space-y-5">
                   {articlesRelated.map((article) => (
