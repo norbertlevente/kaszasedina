@@ -2,6 +2,12 @@ import Image from "next/image";
 import marcImg from "@/app/blog/_assets/images/authors/DSC_8214.jpg";
 import introducingSupabaseImg from "@/public/blog/introducing-supabase/sandy-millar-nuS2GDpCDoI-unsplash.jpg";
 import introducingSupabaseImg2 from "@/public/blog/introducing-supabase/erika-fletcher-YfNWGrQI3a4-unsplash.jpg";
+import introducingSupabaseImg3 from "@/public/blog/introducing-supabase/4.png"
+import introducingSupabaseImg4 from "@/public/blog/introducing-supabase/1.png"
+import introducingSupabaseImg5 from "@/public/blog/introducing-supabase/2.png"
+import introducingSupabaseImg6 from "@/public/blog/introducing-supabase/3.png"
+import introducingSupabaseImg7 from "@/public/blog/introducing-supabase/5.png"
+import introducingSupabaseImg8 from "@/public/blog/introducing-supabase/6.png"
 
 // ==================================================================================================================================================================
 // BLOG CATEGORIES 🏷️
@@ -323,7 +329,7 @@ export const articles = [
     publishedAt: "2024-09-19",
     image: {
       // The image to display in <CardArticle /> components.
-      src: introducingSupabaseImg2,
+      src: introducingSupabaseImg3,
       // The relative URL of the same image to use in the Open Graph meta tags & the Schema Markup JSON-LD.
       urlRelative: "/blog/introducing-supabase/header.jpg",
       alt: "Supabase and ShipFast logo combined",
@@ -390,7 +396,7 @@ export const articles = [
     publishedAt: "2024-09-18",
     image: {
       // The image to display in <CardArticle /> components.
-      src: introducingSupabaseImg2,
+      src: introducingSupabaseImg4,
       // The relative URL of the same image to use in the Open Graph meta tags & the Schema Markup JSON-LD.
       urlRelative: "/blog/introducing-supabase/header.jpg",
       alt: "Supabase and ShipFast logo combined",
@@ -468,7 +474,7 @@ export const articles = [
     publishedAt: "2024-09-18",
     image: {
       // The image to display in <CardArticle /> components.
-      src: introducingSupabaseImg2,
+      src: introducingSupabaseImg5,
       // The relative URL of the same image to use in the Open Graph meta tags & the Schema Markup JSON-LD.
       urlRelative: "/blog/introducing-supabase/header.jpg",
       alt: "Supabase and ShipFast logo combined",

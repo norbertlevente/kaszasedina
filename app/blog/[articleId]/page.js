@@ -92,7 +92,7 @@ export default async function Article({ params }) {
               clipRule="evenodd"
             />
           </svg>
-          Vissza a Blogra
+          Vissza a hasznos anyagokra
         </Link>
       </div>
 

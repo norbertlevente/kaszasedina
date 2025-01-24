@@ -25,7 +25,7 @@ export default async function Category({ params }) {
       article.categories.map((c) => c.slug).includes(category.slug)
     )
     .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
-    .slice(0, 3);
+    .slice(0, 11);
 
   return (
     <>
@@ -40,7 +40,7 @@ export default async function Category({ params }) {
 
       <section className="mb-24">
         <h2 className="font-bold text-2xl lg:text-4xl tracking-tight text-center mb-8 md:mb-12">
-          Most recent articles in {category.title}
+          Ismerd meg a fejlesztési programjainkat és hasznos anyagainkat
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-8">

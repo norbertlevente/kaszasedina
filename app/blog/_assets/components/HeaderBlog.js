@@ -13,7 +13,7 @@ import ButtonExternal from "@/components/ButtonExternal";
 const links = [
   {
     href: "/blog/",
-    label: "Minden poszt",
+    label: "Összes hasznos anyag",
   },
 ];
 
@@ -28,7 +28,7 @@ const ButtonPopoverCategories = () => {
         <>
           <Popover.Button
             className="link no-underline flex flex-nowrap items-center gap-1 text-base-content/80 hover:text-base-content active:text-base-content focus:text-base-content duration-100"
-            title="Blog kategóriák megnyitása"
+            title="Kategóriák megnyitása"
           >
             Kategóriák
             <svg
@@ -176,7 +176,7 @@ const HeaderBlog = () => {
             className="-m-2.5 inline-flex items-center justify-center rounded-box p-2.5"
             onClick={() => setIsOpen(true)}
           >
-            <span className="sr-only">Open main menu</span>
+            <span className="sr-only">Főmenü megnyitása</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -242,7 +242,7 @@ const HeaderBlog = () => {
               className="-m-2.5 rounded-box p-2.5"
               onClick={() => setIsOpen(false)}
             >
-              <span className="sr-only">Close menu</span>
+              <span className="sr-only">Bezárás</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
