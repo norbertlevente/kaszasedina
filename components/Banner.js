@@ -19,9 +19,7 @@ const Banner = () => {
           </svg> 
           <strong className="font-semibold">Email: palotasne.kaszasedina@gmail.com</strong>
         </p>
-        <div className="hidden sm:block">
-          <SocialMediaButtons />
-        </div>
+        
       </div>
     </div>
   );

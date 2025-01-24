@@ -10,6 +10,10 @@ import config from "@/config";
 
 const links = [
   {
+    href: "/blog",
+    label: "Hasznos",
+  },
+  {
     href: "/#features",
     label: "Program",
   },
@@ -21,10 +25,7 @@ const links = [
     href: "/#faq",
     label: "GYIK",
   },
-  {
-    href: "/blog",
-    label: "Blog",
-  },
+
 ];
 
 const cta = <ButtonExternal />;
@@ -73,7 +74,7 @@ const Header = () => {
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
             onClick={() => setIsOpen(true)}
           >
-            <span className="sr-only">Open main menu</span>
+            <span className="sr-only">Főmenü</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -138,7 +139,7 @@ const Header = () => {
               className="-m-2.5 rounded-md p-2.5"
               onClick={() => setIsOpen(false)}
             >
-              <span className="sr-only">Close menu</span>
+              <span className="sr-only">Bezárás</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
