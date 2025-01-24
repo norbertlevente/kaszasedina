@@ -50,7 +50,7 @@ const PrivacyPolicy = () => {
           Back
         </Link>
         <h1 className="text-3xl font-extrabold pb-6">
-          Privacy Policy for {config.appName}
+          Adatvédelmi Szabályzat | {config.appName}
         </h1>
 
         <pre
