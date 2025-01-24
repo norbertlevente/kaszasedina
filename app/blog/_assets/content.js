@@ -139,7 +139,7 @@ export const authors = [
 const styles = {
   h2: "text-2xl lg:text-4xl font-bold tracking-tight mb-4 text-base-content",
   h3: "text-xl lg:text-2xl font-bold tracking-tight mb-2 text-base-content",
-  p: "text-base-content/90 leading-relaxed",
+  p: "text-base-content/90 leading-relaxed [&>a]:text-blue-600 [&>a]:underline",
   strong: "text-base-content/90 leading-relaxed font-bold text-l lg:text-xl",
   ul: "list-inside list-disc text-base-content/90 leading-relaxed",
   li: "list-item",
