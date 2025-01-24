@@ -26,7 +26,7 @@ import config from "@/config";
 // Please write a simple Terms & Services for my site. Add the current date. Do not add or explain your reasoning. Answer:
 
 export const metadata = getSEOTags({
-  title: `Terms and Conditions | ${config.appName}`,
+  title: `Általános szerződési feltételek | ${config.appName}`,
   canonicalUrlRelative: "/tos",
 });
 
@@ -50,46 +50,50 @@ const TOS = () => {
           Back
         </Link>
         <h1 className="text-3xl font-extrabold pb-6">
-          Terms and Conditions for {config.appName}
+          ÁSZF - {config.appName}
         </h1>
 
         <pre
           className="leading-relaxed whitespace-pre-wrap"
           style={{ fontFamily: "sans-serif" }}
         >
-          {`Last Updated: September 26, 2023
+          {`Utoljára frissítve: September 26, 2024
 
-Welcome to ShipFast!
+Üdvözöljük!
 
-These Terms of Service ("Terms") govern your use of the ShipFast website at https://shipfa.st ("Website") and the services provided by ShipFast. By using our Website and services, you agree to these Terms.
+Jelen Általános Szerződési Feltételek (“ÁSZF”) szabályozzák a Palotásné Kaszás Edina által nyújtott szolgáltatások igénybevételét. A szolgáltatások igénybevételével Ön elfogadja a jelen feltételeket.
 
-1. Description of ShipFast
+1. A Szolgáltatás Leírása
+Palotásné Kaszás Edina a gyermekek mozgás- és képességfejlesztésére specializálódott szolgáltatásokat nyújt, ideértve a TSMT terápiát, beszédfejlesztést, figyelem- és koncentrációjavító gyakorlatokat, érzékelési és viselkedési problémák kezelését.
 
-ShipFast is a platform that offers a JavaScript code boilerplate to assist entrepreneurs in launching their startups more efficiently.
+2. Tulajdonjog és Felhasználási Feltételek
+Az igénybe vett szolgáltatások kizárólag személyes és nem kereskedelmi célú felhasználásra vehetők igénybe. Az órákon és konzultációkon nyújtott tanácsokat és útmutatásokat tilos harmadik fél számára értékesíteni vagy kereskedelmi célokra felhasználni.
 
-2. Ownership and Usage Rights
+3. Adatkezelés és Adatvédelem
+A szolgáltatások igénybevételéhez szükséges személyes adatokat, beleértve az Ön nevét, e-mail címét és telefonszámát, az adatvédelmi irányelveknek megfelelően kezeljük. Részletekért kérjük, olvassa el az Adatvédelmi és Adatkezelési Szabályzatot.
 
-When you purchase a package from ShipFast, you gain the right to download and use the code provided for creating applications. You own the code you create but do not have the right to resell it. We offer a full refund within 7 days of purchase, as specified in our refund policy.
+4. Lemondási Feltételek
+Az órák lemondását kérjük, legalább 24 órával az időpont előtt jelezze. A határidőn túl lemondott vagy elmulasztott időpontok esetében a szolgáltatás díja nem téríthető vissza.
 
-3. User Data and Privacy
+5. Számlázás és Fizetés
+A szolgáltatások díjának megfizetése történhet készpénzben, banki átutalással vagy egyéb, előre egyeztetett módon. A számlát minden esetben a fizetést követően állítjuk ki.
 
-We collect and store user data, including name, email, and payment information, as necessary to provide our services. For details on how we handle your data, please refer to our Privacy Policy at https://shipfa.st/privacy-policy.
+6. Jogszabályi Hivatkozások
+Jelen ÁSZF-et a Magyarországon hatályos jogszabályok, különösen a Polgári Törvénykönyv és a fogyasztóvédelmi törvény szabályozzák.
 
-4. Non-Personal Data Collection
+7. Az ÁSZF Módosítása
+Az ÁSZF változtatásának jogát fenntartjuk. A módosításokról a weboldalon vagy e-mailben értesítjük az ügyfeleket. A változások a közzététel napján lépnek hatályba.
 
-We use web cookies to collect non-personal data for the purpose of improving our services and user experience.
+Elérhetőség
+Palotásné Kaszás Edina
+Cím: Jókai utca 28-30., 6000 Kecskemét
+Email: palotasne.kaszasedina@gmail.com
+Telefonszám: +36 [telefonszám]
 
-5. Governing Law
+Kérdéseivel és észrevételeivel forduljon hozzám bizalommal!
+Köszönöm, hogy a szolgáltatásaimat választja!
 
-These Terms are governed by the laws of France.
-
-6. Updates to the Terms
-
-We may update these Terms from time to time. Users will be notified of any changes via email.
-
-For any questions or concerns regarding these Terms of Service, please contact us at marc@shipfa.st.
-
-Thank you for using ShipFast!`}
+`}
         </pre>
       </div>
     </main>

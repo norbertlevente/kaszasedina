@@ -26,7 +26,7 @@ import config from "@/config";
 // Please write a simple privacy policy for my site. Add the current date.  Do not add or explain your reasoning. Answer:
 
 export const metadata = getSEOTags({
-  title: `Privacy Policy | ${config.appName}`,
+  title: `Adatvédelmi és Adatkezelési Szabályzat | ${config.appName}`,
   canonicalUrlRelative: "/privacy-policy",
 });
 
@@ -57,51 +57,48 @@ const PrivacyPolicy = () => {
           className="leading-relaxed whitespace-pre-wrap"
           style={{ fontFamily: "sans-serif" }}
         >
-          {`Last Updated: 2023-08-25
+          {`Utoljára frissítve: 2024-08-25
 
-Thank you for visiting ShipFast ("we," "us," or "our"). This Privacy Policy outlines how we collect, use, and protect your personal and non-personal information when you use our website located at https://shipfa.st (the "Website").
+Palotásné Kaszás Edina egyéni vállalkozó
+Érvényes: 2025. január 24-től
 
-By accessing or using the Website, you agree to the terms of this Privacy Policy. If you do not agree with the practices described in this policy, please do not use the Website.
+Cím: Jókai utca 28-30., 6000 Kecskemét
+Telefonszám: +36 [telefonszám]
+Email: palotasne.kaszasedina@gmail.com
+Adószám: [adószám]
 
-1. Information We Collect
+1. ÁLTALÁNOS RENDELKEZÉSEK
+A jelen Adatvédelmi és Adatkezelési Szabályzat célja, hogy tájékoztassa az érintetteket a személyes adatok kezelésének elveiről, módjáról, céljairól és jogalapjáról, valamint a vonatkozó jogokról. Az adatkezelés során a vonatkozó hatályos jogszabályokat maradéktalanul betartjuk, különös tekintettel az alábbiakra:
+  •	Az Európai Parlament és a Tanács (EU) 2016/679 rendelete (GDPR),
+  •	Az információs önrendelkezési jogról és az információszabadságról szóló 2011. évi CXII. törvény (Info tv.),
+  •	Az elektronikus kereskedelmi szolgáltatásokra vonatkozó 2001. évi CVIII. törvény.
 
-1.1 Personal Data
+2. WEBOLDAL HASZNÁLATA, COOKIE POLICY
+A weboldalam (amennyiben létezik): szabadon látogatható regisztráció és személyes adat megadása nélkül. A weboldalon ún. „cookie”-kat (sütiket) használok, amelyek a felhasználói élmény javítását és a látogatási adatok elemzését szolgálják. A weboldal használatával a látogató elfogadja a sütik használatát.
 
-We collect the following personal information from you:
+A cookie-k kezelését a látogató a böngészője beállításaiban szabályozhatja, illetve tilthatja le.
 
-Name: We collect your name to personalize your experience and communicate with you effectively.
-Email: We collect your email address to send you important information regarding your orders, updates, and communication.
-Payment Information: We collect payment details to process your orders securely. However, we do not store your payment information on our servers. Payments are processed by trusted third-party payment processors.
+3. HÍRLEVÉL SZOLGÁLTATÁS
+Hírlevél-szolgáltatást nyújtok azoknak, akik önként feliratkoznak a szolgáltatásra. A regisztráció során megadott személyes adatokat (név, email-cím, telefonszám stb.) kizárólag az előzetes hozzájárulás alapján kezelem. A hírlevelek küldése során harmadik fél, például a Google Mail szolgáltatását használom.
 
-1.2 Non-Personal Data
+A feliratkozók bármikor kérhetik adataik törlését a palotasne.kaszasedina@gmail.com email-címen.
 
-We may use web cookies and similar technologies to collect non-personal information such as your IP address, browser type, device information, and browsing patterns. This information helps us to enhance your browsing experience, analyze trends, and improve our services.
+4. ADATOK KEZELÉSE, MÓDOSÍTÁSA ÉS TÖRLÉSE
+A személyes adatokat kizárólag a jelen szabályzatban meghatározott célokra használom, és csak addig tárolom, amíg az szükséges. Az érintettek kérhetik személyes adataik módosítását vagy törlését a palotasne.kaszasedina@gmail.com email-címen. A kéréseket haladéktalanul, legkésőbb 15 napon belül teljesítem.
 
-2. Purpose of Data Collection
+5. JOGORVOSLATI LEHETŐSÉGEK
+Ha úgy érzi, hogy személyes adatait jogosulatlanul kezeltem, tiltakozhat az adatkezelés ellen az alábbi elérhetőségeken:
+  •	Email: palotasne.kaszasedina@gmail.com
+  •	Postai cím: Jókai utca 28-30., 6000 Kecskemét
 
-We collect and use your personal data for the sole purpose of order processing. This includes processing your orders, sending order confirmations, providing customer support, and keeping you updated about the status of your orders.
+Ha a problémát nem sikerül rendezni, panaszt tehet a Nemzeti Adatvédelmi és Információszabadság Hatóságnál (NAIH):
+  •	Cím: 1055 Budapest, Falk Miksa utca 9-11.
+  •	Weboldal: www.naih.hu
 
-3. Data Sharing
+6. ZÁRÓ RENDELKEZÉSEK
+Jelen Adatvédelmi és Adatkezelési Szabályzat bármikor módosítható. A módosításokat a weboldalamon (ha van) teszem közzé, és azok a közzététel napjától hatályosak.
 
-We do not share your personal data with any third parties except as required for order processing (e.g., sharing your information with payment processors). We do not sell, trade, or rent your personal information to others.
-
-4. Children's Privacy
-
-ShipFast is not intended for children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us at the email address provided below.
-
-5. Updates to the Privacy Policy
-
-We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any updates will be posted on this page, and we may notify you via email about significant changes.
-
-6. Contact Information
-
-If you have any questions, concerns, or requests related to this Privacy Policy, you can contact us at:
-
-Email: marc@shipfa.st
-
-For all other inquiries, please visit our Contact Us page on the Website.
-
-By using ShipFast, you consent to the terms of this Privacy Policy.`}
+`}
         </pre>
       </div>
     </main>
